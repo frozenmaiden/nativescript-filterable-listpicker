@@ -43,7 +43,7 @@ export class FilterableListpicker extends GridLayout {
                         <ListView.itemTemplate>
                             <StackLayout>
                                 <GridLayout columns="auto, *" visibility="{{title ? 'visible' : 'collapsed'}}">
-                                    <Image src="{{image ? image : 'https://elgibor-solution.com/assets/images/logo.png'}}" width="30" visibility="{{image ? 'visible' : 'collapsed'}}" stretch="aspectFit" rowSpan="2" style="margin: 10 0 10 5;"></Image>
+                                    <Image src="{{image ? image : null}}" width="30" visibility="{{image ? 'visible' : 'collapsed'}}" stretch="aspectFit" rowSpan="2" style="margin: 10 0 10 5;"></Image>
                                     <StackLayout style="margin: 10 10 10 5;" col="1" verticalAlignment="middle">
                                         <Label text="{{title ? title : ''}}" textWrap="true" style="font-weight: bold; font-size: 16;"></Label>
                                         <Label text="{{description ? description : ''}}" textWrap="true" visibility="{{description ? 'visible' : 'collapsed'}}" style="color: gray; font-size: 13;"></Label>
